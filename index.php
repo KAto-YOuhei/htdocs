@@ -1,11 +1,18 @@
-<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
-Something is wrong with the XAMPP installation :-(
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PHP基礎編</title>
+</head>
+
+<body>
+  <p>この文章はHTMLで出力されています</p>
+  <p>
+    <?php
+    echo 'この文章はPHPで出力しています。';
+    ?>
+  </p>
+</body>
+
+</html>
